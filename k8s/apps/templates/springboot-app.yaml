@@ -1,21 +1,21 @@
-apiVersion: argoproj.io/v1alpha1
-kind: AppProject
-metadata:
-  name: demo-grafana-stack
-spec:
-  clusterResourceWhitelist:
-    - group: '*'
-      kind: '*'
-  description: demo-grafana-stack
-  destinations:
-    - name: docker-desktop
-      namespace: '*'
-      server: https://kubernetes.default.svc
-  namespaceResourceWhitelist:
-    - group: '*'
-      kind: '*'
-  sourceRepos:
-    - '*'
+# apiVersion: argoproj.io/v1alpha1
+# kind: AppProject
+# metadata:
+#   name: demo-grafana-stack
+# spec:
+#   clusterResourceWhitelist:
+#     - group: '*'
+#       kind: '*'
+#   description: demo-grafana-stack
+#   destinations:
+#     - name: docker-desktop
+#       namespace: '*'
+#       server: https://kubernetes.default.svc
+#   namespaceResourceWhitelist:
+#     - group: '*'
+#       kind: '*'
+#   sourceRepos:
+#     - '*'
 ---
 apiVersion: argoproj.io/v1alpha1
 kind: Application
