@@ -1,0 +1,14 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: demo-grafana-stack
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  destination:
+    server: {{ .Values.spec.destination.server }}
+  project: default
+  source:
+    path: springboot-microservice
+    repoURL: https://github.com/argoproj/argocd-example-apps
+    targetRevision: main
