@@ -6,9 +6,12 @@ metadata:
     - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
-    server: {{ .Values.spec.destination.server }}
+    server: https://kubernetes.default.svc
   project: default
   source:
     path: springboot-microservice
-    repoURL: https://github.com/argoproj/argocd-example-apps
+    repoURL: https://github.com/nguyenhoangnam123/demo-grafana-stacks.git
     targetRevision: main
+    helm:
+      valueFiles:
+        - values.yaml
