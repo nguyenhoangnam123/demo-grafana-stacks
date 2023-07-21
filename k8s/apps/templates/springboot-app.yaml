@@ -28,7 +28,7 @@ spec:
     server: https://kubernetes.default.svc
   project: demo-grafana-stack
   source:
-    path: springboot-microservice
+    path: k8s/springboot-microservice
     repoURL: https://github.com/nguyenhoangnam123/demo-grafana-stacks.git
     targetRevision: main
     helm:
