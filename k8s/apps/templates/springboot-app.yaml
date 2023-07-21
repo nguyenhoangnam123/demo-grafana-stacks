@@ -2,7 +2,6 @@ apiVersion: argoproj.io/v1alpha1
 kind: AppProject
 metadata:
   name: demo-grafana-stack
-  namespace: app
 spec:
   clusterResourceWhitelist:
     - group: '*'
@@ -22,7 +21,6 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: demo-grafana-stack
-  namespace: app
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
