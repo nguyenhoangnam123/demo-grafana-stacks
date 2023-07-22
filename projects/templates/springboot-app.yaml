@@ -26,9 +26,9 @@ metadata:
 spec:
   destination:
     server: https://kubernetes.default.svc
-  project: demo-grafana-stack
+  project: default
   source:
-    path: k8s/springboot-microservice
+    path: projects/springboot-microservice
     repoURL: https://github.com/nguyenhoangnam123/demo-grafana-stacks.git
     targetRevision: main
     helm:
