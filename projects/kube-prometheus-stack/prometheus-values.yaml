@@ -15,7 +15,7 @@ serviceAccounts:
     name:
     annotations: {}
   nodeExporter:
-    create: true
+    create: false
     name:
     annotations: {}
   pushgateway:
