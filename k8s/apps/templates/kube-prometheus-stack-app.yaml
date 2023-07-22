@@ -10,11 +10,11 @@ spec:
   project: demo-grafana-stack
   sources:
   - repoURL: 'https://prometheus-community.github.io/helm-charts'
-    chart: kube-prometheus-stack
-    targetRevision: '48.1.2'
+    chart: prometheus
+    targetRevision: '15.7.1'
     helm:
       valueFiles:
-      - $values/k8s/kube-prometheus-stack/values.yaml
+      - $values/k8s/kube-prometheus-stack/prometheus-values.yaml
   - repoURL: https://github.com/nguyenhoangnam123/demo-grafana-stacks.git
     targetRevision: main
     ref: values
