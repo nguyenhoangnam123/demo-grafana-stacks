@@ -24,7 +24,7 @@ serviceAccounts:
     annotations: {}
   server:
     create: true
-    name:
+    name: prometheus
     annotations: {}
 
 alertmanager:
